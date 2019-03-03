@@ -32,7 +32,7 @@ class App extends Component {
   parseTimeElapsed = (centisecondsElapsed) => {
     let centiseconds = centisecondsElapsed % 100;
     let seconds = Math.floor(centisecondsElapsed / 100) % 60;
-    let minutes = Math.floor(centisecondsElapsed / 6000) % 60;
+    let minutes = Math.floor(centisecondsElapsed / 6000);
     centiseconds = this.parseDigits(centiseconds);
     seconds = this.parseDigits(seconds);
     minutes = this.parseDigits(minutes);
